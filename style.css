@@ -1,0 +1,106 @@
+/* hare we used color changing background  */
+body {
+  animation: changeBg 11s infinite alternate linear;
+}
+@keyframes changeBg {
+  0% {
+    background: whitesmoke;
+  }
+  25% {
+    background: #60d394;
+  }
+  50% {
+    background: #aaf683;
+  }
+  75% {
+    background: #ffd97d;
+  }
+  100% {
+    background: #ff9b85;
+  }
+}
+.heading {
+  text-align: center;
+}
+/* main container */
+.card {
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+/* wave animation to NAME */
+.wave span {
+  font-weight: bold;
+  background: linear-gradient(270deg, #d703fd, #4040cb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: rgb(26, 24, 24);
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+.about {
+  color: grey;
+  font-size: 18px;
+}
+/* social media icon */
+.logo {
+  margin: 20px 0;
+}
+.logo2 {
+  padding: 15px;
+}
+/* hare animation given to  button*/
+button:hover {
+  background: rgb(41, 39, 39);
+  border: 2px solid #799be6;
+  box-shadow: 0 0 10px 0 #799be6 inset, 0 0 10px 4px #799be6;
+  border-radius: 10px;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: darkorange;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+#insta:hover {
+  background-color: #bc2a8d;
+  border-radius: 20px;
+}
+#twit:hover {
+  background-color: #1da1f2;
+  border-radius: 20px;
+}
+#linkd:hover {
+  background-color: #0a66c2;
+  border-radius: 20px;
+}
+#fb:hover {
+  background-color: #3b5998;
+  border-radius: 20px;
+}
+img:hover {
+  transform: scale(1.05);
+}
